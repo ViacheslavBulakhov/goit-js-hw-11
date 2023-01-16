@@ -1,6 +1,7 @@
 import Notiflix from 'notiflix';
 import axios from "axios";
 let debounce = require('lodash.debounce');
+import {fetchImages} from './js/fetch';
 
 const axios = require('axios');
 
@@ -27,7 +28,7 @@ function onInput(e) {
     if (name === '') {
         return;
     }
-    // fetchCountries(name,Notiflix).then(checkupByQuantity)
+    fetchImages(name,Notiflix).then(e=>console.log(e))
 }
 function resetHtml() {
     imageBlock.innerHTML = '';
