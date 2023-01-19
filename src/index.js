@@ -5,9 +5,8 @@ import NewsApiService from './js/api-service';
 
 let throttle = require('lodash.throttle');
 let gallery = new SimpleLightbox('.gallery a');
-
 const ApiService = new NewsApiService();    
-
+let asd;
 const refs = {
     form: document.querySelector('form.search-form'),
     imageBlock: document.querySelector('.gallery'),
