@@ -3,7 +3,7 @@ import axios from "axios";
 export default class NewsApiService{
     constructor(){
         this.searchQuery = '';
-        this.perPage = 5;
+        this.perPage = 40;
         this.page = 1;
     }
    async fetchArticles(){
